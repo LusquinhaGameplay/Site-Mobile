@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas'Burguer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Cardápio</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Burguer</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Salada</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Baccon</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cheddar e Baccon</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Frango</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Lucas'</b>Burguer🍔</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Cardápio</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Burguer</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Salada</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Baccon</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cheddar e Baccon</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">X-Frango</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Atendimento</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Promoções</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Lucas'Burguer🍔</h2>
+        <p class="banner__texto">Trazendo sempre a melhor refeição para os clientes</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será seu pedido?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/Vegetariano.jpeg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/X-Frango.jpeg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/X-Baccon.jpeg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/Vegetariano.jpeg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/X-Frango.jpeg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/X-Baccon.jpeg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">X-Frango</h2>
+                        <p class="descrição__texto">A mais nova opção o nosso cardápio.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/X-Frango(1).jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/X-Burguer.jpeg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/X-Salada.jpeg"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/Cheddar e Baccon.jpeg"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/X-Burguer.jpeg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/X-Salada.jpeg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/Cheddar e Baccon.jpeg" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Mais vendido do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Cheddar e Baccon</h2>
+                        <p class="descrição__texto">Opção mais pedida pelos clientes.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/Cheddar e Baccon(1).jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">CARDÁPIO</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">X-Burguer</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">X-Frango</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">X-Baccon</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Cheddar e Baccon</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">X-salada</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Vegetariano</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Batatas</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Refrigerante</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Cadastre-se para receber notificações de promoções e novidades.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo Alura</h2>
+            <li class="lista-rodapé__item">
+                <img src="img/Whatsapp logo.jpg" alt="Logo do Whatsapp">
+                <a href="#" class="lista-rodapé__link">Whatsapp</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Facebook Logo.jpg" alt="Logo do Facebook">
+                <a href="#" class="lista-rodapé__link">Facebook</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Instagram Logo.jpg" alt="Logo do Instagram">
+                <a href="#" class="lista-rodapé__link">Instagram</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
